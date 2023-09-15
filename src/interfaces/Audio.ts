@@ -1,0 +1,42 @@
+import { ApiResource } from "../utils/types";
+
+export interface Audio extends ApiResource {
+  network?: string;
+  site?: string;
+  creator?: string;
+  categories?: string[];
+  type?: string;
+  states?: string[];
+  attachments?: string[];
+  textVersions?: string[];
+  storage?: string;
+  coverPhotos?: string[];
+  saveSourceFile?: boolean;
+  publish?: string;
+  status?: string;
+  dtCreated?: string;
+  dtUpdated?: string;
+  contentFlags?: string;
+  networkPermissions?: string;
+  groupPermissions?: string;
+  userPermissions?: string;
+  minViewingAge?: number;
+  mediaFiles?: string[];
+  duration?: number;
+  meta?: any;
+  contentUrls?: any;
+  embedUrl?: string;
+  thumbnailUrl?: string;
+  locale?: string;
+  title?: string;
+  description?: string;
+  body?: string;
+  activeTextVersions?: any;
+  contentUrl?: string;
+  size?: string;
+  mimeType?: string;
+  timeToEncode?: number;
+  humanFileSize?: string;
+  sourceFileUrl?: string;
+  humanStatus?: string;
+}

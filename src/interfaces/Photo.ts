@@ -1,0 +1,46 @@
+import { ApiResource } from "../utils/types";
+
+export interface Photo extends ApiResource {
+  network?: string;
+  site?: string;
+  creator?: string;
+  storage?: string;
+  type?: string;
+  categories?: string[];
+  states?: string[];
+  attachments?: string[];
+  textVersions?: string[];
+  document?: string;
+  video?: string;
+  audio?: string;
+  saveSourceFile?: boolean;
+  file?: any;
+  publish?: string;
+  status?: string;
+  dtCreated?: string;
+  dtUpdated?: string;
+  contentFlags?: string;
+  networkPermissions?: string;
+  groupPermissions?: string;
+  userPermissions?: string;
+  minViewingAge?: number;
+  avatarFiles?: string[];
+  mediaFiles?: string[];
+  width?: number;
+  height?: number;
+  contentUrls?: any;
+  embedUrl?: string;
+  thumbnailUrl?: string;
+  locale?: string;
+  title?: string;
+  description?: string;
+  body?: string;
+  activeTextVersions?: any;
+  contentUrl?: string;
+  size?: string;
+  mimeType?: string;
+  timeToEncode?: number;
+  humanFileSize?: string;
+  sourceFileUrl?: string;
+  humanStatus?: string;
+}
